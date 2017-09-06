@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <malloc.h>
+//#include "../dimensions.h"
  
 #ifndef DATA_TYPE
 #define DATA_TYPE float
