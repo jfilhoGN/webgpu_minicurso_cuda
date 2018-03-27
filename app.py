@@ -45,18 +45,6 @@ def uploaded_file(filename):
                 #time.sleep(1)
                 yield line.rstrip() + '<br/>\n'
     return render_template('view.html', out=inner()) 
-    #return flask.Response(inner(), mimetype='text/html')
-            #out,err = q.communicate()
-        # elif(extension=="cu"):
-        #     #nvcc -I /usr/local/cuda/include -L /usr/local/cuda/lib64 -ccbin=g++-4.9 src/sumvector.cu -lcuda -lm -o sumvector-cuda
-        #     exe = ["/usr/local/cuda/bin/nvcc -I /usr/local/cuda/include -L /usr/local/cuda/lib64 -ccbin=g++-4.9 ./uploads/"+filename +" -lcuda -lm -o ./uploads/"+filename+".exe"]
-        #     p = subprocess.Popen(exe, stdout = subprocess.PIPE, shell=True)
-        #     p.communicate()
-        #     exe1 = ["./uploads/"+filename+".exe"]
-        #     q = subprocess.Popen(exe1, stdout = subprocess.PIPE, shell=True)
-        #     out,err = q.communicate()
-        #     #print out
-        #     #return render_template('view.html', out=out, error=err)
 
 if __name__ == '__main__':
     app.run(
