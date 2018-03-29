@@ -81,8 +81,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': os.getenv('DB_NAME', 'webgpu'),
-        'USER': os.getenv('DB_USER', 'root'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'asafaster'),
+        'USER': os.getenv('DB_USER', 'webgpu'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'webgpu123'),
         'HOST': os.getenv('DB_HOST', '127.0.0.1'),
         'PORT': '3306'
     }

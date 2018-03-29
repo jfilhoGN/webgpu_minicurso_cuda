@@ -21,6 +21,6 @@ from django.views.generic.base import TemplateView
 from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('login/', views.login),
     url(r'^$', TemplateView.as_view(template_name='home.html'))
-    #url(r'^$', TemplateView.as_view(template_name='home.html'), name="home")
 ]
