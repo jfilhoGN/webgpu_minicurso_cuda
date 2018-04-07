@@ -13,17 +13,18 @@
   body {
       font: 20px Montserrat, sans-serif;
       line-height: 1.8;
-      color: #f5f6f7;
+      color: #1A1A1A;
+      background-color: #474e5d;
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
       background-color: #1abc9c; /* Green */
-      color: #ffffff;
+      color: ##1A1A1A;
   }
   .bg-2 { 
       background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
+      color: ##1A1A1A;
   }
   .bg-3 { 
       background-color: #ffffff; /* White */
@@ -49,6 +50,47 @@
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
   }
+  .exercicio-screen {
+	background-color: #FFF;
+	padding: 20px;
+	border-radius: 5px
+	}
+
+	.exercicio {
+	margin: 60px auto;
+	width: 950px;
+	}
+
+	.exercicio1 {
+	margin: 50px auto;
+	width: 600px;
+	}
+
+	th {
+		text-align: center;
+    border: 5px solid transparent;
+    background-clip: padding-box;
+	}
+
+	td{
+    border: 30px solid transparent;
+    background-clip: padding-box;
+	}
+
+
+	.app-title {
+	text-align: center;
+	color: #777;
+	}
+	
+	.login-form {
+	text-align: center;
+	}
+
+	.control-group {
+	margin-bottom: 10px;
+	}
+
 
   </style>
 </head>
@@ -67,19 +109,55 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <!--<li><a href="/login">Login</a></li> -->
-        <li><a href="/login">Login</a></li>
+        <!--<li><a href="/login">Login</a></li> 
+        <li><a href="/login">Login</a></li> -->
+        <select class="form-control">
+          <option value="one">Exercicio 1</option>
+          <option value="two">Exercicio 2</option>
+          <option value="three">Exercicio 3</option>
+          <option value="four">Exercicio 4</option>
+          <option value="five">Exercicio 5</option>
+        </select>
       </ul>
     </div>
   </div>
 </nav>
 
+	<div class="exercicio1 ">
+		<div class="exercicio-screen">
+			<div class="app-title">
+				<h1>Exercício XX</h1>
+				<p>Faça um algoritmo soma de vetor em CUDA</p>
+			</div>
+		</div>
+	</div>
+
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">Desenvolvimento de uma Plataforma Web para Suporte a Cursos de Computação Paralela</h3>
-  <p>O objetivo deste projeto é criar uma plataforma web para dar suporte às aulas de Computação Paralela, disponibilizando acesso a dispositivos aceleradores para alunos de cursos de extensão. 
-  </p>
-</div>
+	<div class="exercicio ">
+		<div class="exercicio-screen">
+			<table>
+				<tr> 
+					<th> Escreva seu código</th>
+					<th> Resultado</th>
+				</tr>
+				<tr>
+					<td>
+            <input type="submit" class="btn btn-success" value="Compilar"><br><br><br>
+						<textarea class="form-control" name="code" rows="50" cols="40"></textarea><br><br>
+					</td>
+
+					<td>
+          <br><br><br><br>
+						<textarea placeholder="Output" class="form-control" name="code" rows="50" cols="40"></textarea><br><br><br>
+					</td>
+				</tr>
+
+			</table>
+			
+		</div>
+	</div>
+
+
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
