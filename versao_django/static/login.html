@@ -85,6 +85,8 @@ box-shadow: none;
   </style>
 </head>
 
+
+
 <body>
   <body>
 	<div class="login">
@@ -92,20 +94,20 @@ box-shadow: none;
 			<div class="app-title">
 				<h1>Login</h1>
 			</div>
-
 			<div class="login-form">
 				<div class="control-group">
-				<input type="text" class="login-field" value="" placeholder="usuário" id="login-name">
-				<label class="login-field-icon fui-user" for="login-name"></label>
-				</div>
-
-				<div class="control-group">
-				<input type="password" class="login-field" value="" placeholder="senha" id="login-pass">
-				<label class="login-field-icon fui-lock" for="login-pass"></label>
-				</div>
+          <form class="form-horizontal" name="LoginForm" action="/login/" method="post">
+            <input type="text" name="next" value="{{ next }}" class="login-field" placeholder="usuário" id="login-name">
+            <label class="login-field-icon fui-user" for="login-name"></label>
+    			</div>
+  				<div class="control-group">
+  				<input type="password" class="login-field" value="" placeholder="senha" id="login-pass">
+  				<label class="login-field-icon fui-lock" for="login-pass"></label>
+  				</div>
 
 				<a class="btn btn-primary btn-large btn-block" href="#">login</a>
 				<p>Esqueceu a senha, entre em contato no email </p>
+        </form>
 			</div>
 		</div>
 	</div>
